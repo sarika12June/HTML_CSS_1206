@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>basic html</title>
+<style>
+.one{
+width:200px;
+height:200px;
+background-color:orange;
+position:relative;
+}
+.overlay_left{
+width:100px;
+height:200px;
+background-color:orange;
+position:absolute;
+opacity:0.6;
+top:0px;
+left:0px;
+transition:0.6s;
+}
+.overlay_right{
+width:100px;
+height:200px;
+background-color:green;
+position:absolute;
+opacity:0.6;
+top:0px;
+right:0px;
+transition:0.6s;
+}
+.one:hover .overlay_left{
+width:10px;
+}
+.one:hover .overlay_right{
+width:10px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="one">
+<img src="images/image2.jpg" height="200px" width="200px">
+<div class="overlay_left">left</div>
+<div class="overlay_right">right</div>
+</div>
+</body>
+
+</html>
