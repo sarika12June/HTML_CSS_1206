@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>html
+</title>
+<style>
+.container{
+width:200px;
+height:200px;
+margin:100px;
+border:5px solid blue;
+transition:2s;
+position:relative;
+border-style:dashed;
+}
+.overlay{
+width:100px;
+height:100px;
+background-color:blue;
+bottom:140px;
+left:150px;
+position:absolute;
+text-align:center;
+padding:25px;
+font-size:30px;
+box-sizing:border-box;
+border:5px solid skyblue;
+border-style:dotted;
+border-radius:50px;
+}
+.container img:hover{
+/*transform:skewx(45deg);//height*/
+/*transform:skewy(45deg);//width*/
+transform:skew(45deg,-45deg);
+}
+.overlay:hover{
+border-radius:0px;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="container">
+<img src="images/car2.jpg" height="200px" width="200px">
+<div class="overlay">50%</div>
+</div>
+
+
+</body>
+
+
+</html>

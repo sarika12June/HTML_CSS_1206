@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>javascript
+</title>
+
+<script>
+var basicObj={
+myNumber:4,
+}
+var displayNumber = function(a,b,c){
+console.log(this.myNumber+a+b+c);
+}
+var binddata = displayNumber.bind(basicObj);
+binddata(1,2,3);
+</script>
+</head>
+
+<body>
+
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>javascript
+</title>
+
+<script>
+var makePromise =new Promise((success,fail)=>{
+var isComplete= false;
+if(isComplete){
+sucess("Everything is fine");
+}else
+{
+fail("There is a problem");
+}
+});
+makePromise.then((result)=>{
+console.log("result")
+}).catch((error)=>{
+console.log("Error")
+});
+</script>
+</head>
+
+<body>
+
+</body>
+
+
+</html>

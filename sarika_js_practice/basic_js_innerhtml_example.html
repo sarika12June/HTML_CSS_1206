@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>javascript
+</title>
+<script>
+function messagecounter(){
+var msg_chars_count=document.getElementById('msg').value.length;
+var max_allowed_chars=100;
+
+var remain_chars=max_allowed_chars-msg_chars_count;
+document.getElementById('char_count').innerHTML=remain_chars;
+}
+</script>
+
+<body>
+<textarea id="msg" rows=10 cols=50  max length=100  onkeyup="messagecounter()"></textarea>
+<span id="char_count">100</span>charecters remained.
+</body>
+
+
+</html>
